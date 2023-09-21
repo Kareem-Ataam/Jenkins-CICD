@@ -36,7 +36,7 @@ pipeline {
                 steps {
                     sh '''
                         echo "*****Deploying the app container*****"
-                        ssh -i id_rsa ubuntu@ec2-13-48-177-251.eu-north-1.compute.amazonaws.com /home/ubuntu/deploy.sh $BUILD_NUMBER
+                        ssh -i id_rsa ubuntu@ec2-13-48-84-38.eu-north-1.compute.amazonaws.com /home/ubuntu/deploy.sh $BUILD_NUMBER
                        '''
                 }
         }
